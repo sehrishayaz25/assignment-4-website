@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Now</title>
+  <link rel="icon" href="logo main.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	if((x.length <= 2) || (x.length>20))
+	{
+		alert("name length must be between 2 and 20 character");
+        return false;
+	}
+	if(!isNaN(x))
+	{
+		alert("Only character allowed");
+        return false;
+	}
+	var z = document.forms["myForm"]["email"].value;
+    if (z == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+	var a = document.forms["myForm"]["tel"].value;
+    if (a == "") {
+        alert("phone no must be filled out");
+        return false;
+    }
+	if((a.length <= 2) || (a.length>12))
+	{
+		alert("phone length must be between 2 and 12 character");
+        return false;
+	}
+	if(isNaN(a))
+	{
+		alert("Only numbers allowed");
+        return false;
+	}
+}
+
+</script>
+
+<style>
+h4{
+color:#FFA500;
+font-size: 20px;
+padding:10px;
+letter-spacing:2px;
+}
+.clear {
+  clear: right;
+}
+.lef{
+  float: left;
+}
+h2{
+font-size: 50px;
+padding:50px;
+letter-spacing:2px;
+}
+p{
+letter-spacing:2px;
+}
+.form-inline {  
+  color:silver;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right:15px;
+ 
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width:600px;
+  background-color:transparent;
+  padding:20px;
+}
+
+textarea {
+    width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	background-color:transparent;
+}
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+p a{
+color:white;
+}
+p a:hover{
+  color: #FFA500;
+  text-decoration: none;
+}
+</style>
+</head>
+<body style="background-color: #000;">
+
+<div class="container">
+	<h2 style="color: white;font-family: monospace;font-weight: bold;font-size: 65px;" ><center >Order Now</center></h2>
+	
+	  
+	  <form  name="myForm" method="POST" action="contact.php" onsubmit="return validateForm()" >
+		  <div class="lef">
+				<div class="form-inline">
+					<label for="fname"></label>
+					<input type="text" id="fname" name="firstname" placeholder="Name" maxlength="20" >
+				</div>
+				
+				<div class="form-inline"> 
+					<label for="email"></label>
+					<input type="email" id="email" name="email" placeholder="Email">
+				</div>
+				
+				<div class="form-inline"> 
+					<label for="tel"></label>
+					<input type="tel" id="tel" name="usrtel" placeholder="Phone" maxlength="12">
+                </div>
+                
+                <label for="categories" style="font-size:14px;background-color: #FFA500; color:white;width:130px;border-radius: 3px 0px;border:none;padding:8px;margin-left: 12px;margin-top: 10px;margin-right: 5px;">Select Category:</label>
+                <select name="Category" id="Category" style="font-size:14px;background-color: #FFA500; color:white;width:160px;border-radius: 3px 0px;border:none;padding:8px;">
+                  <optgroup label="Potraits">
+                    <option value="Drawings & Paintings">Drawings & Paintings</option>
+                    <option value="Sketches & Illustrations">Sketches & Illustrations</option>
+                    <option value="Calligraphy">Calligraphy</option>
+                  </optgroup>
+                  <optgroup label="Handmade">
+                    <option value="Handmade decor">Handmade decorations</option>
+                    <option value="Handmade decor">Handmade Cards</option>
+                  </optgroup>
+                </select>
+
+				<form action="#" method="post">
+                    <input type="file" style="font-size:14px;background-color: #FFA500; color:white;width:200px;border-radius: 3px 0px;border:none;padding:8px;margin-left: 12px;margin-top: 10px;" /><br>
+                    </form>
+  
+				<div class="form-inline">
+					<label for="subject"></label>
+					<textarea id="subject" name="subject" placeholder="Your Details here..." style="height:80px" ></textarea>
+                </div>
+				
+				<button type="submit" name="Order Now" class="btn btn-default" style="font-size:20px;background-color: #FFA500; color:white;width:150px;border-radius: 0px 0px;border:none;padding:12px;margin-left: 12px;">ORDER NOW</button><br><br>
+			</div> 
+			 <div class="clear">
+				 <h3 style="color: white;">Address:</h3>
+				 <p style="font-size:15px;color: white; "><i style="font-size:20px;color:#FFA500;" class='fas'>&#xf015;</i>National Stadium Road, Karachi</P>
+				 <h3 style="color: white;">Phones:</h3>
+				 <p style="font-size:15px;color: white;"><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0b0;</i> +17 999 888 7773</P>
+				 <p style="font-size:15px; color: white;"><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0dd;</i> +12 222 333 2365</P>
+				 <h3 style="color: white;">Email:</h3>
+				 <p style="font-size:15px;color: white; "><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0e1;</i> sehrishayaz25@gmail.com</P>
+				 <p style="font-size:15px;color: white;"><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe80b;</i> website@example.com</P>
+			 </div>
+	  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Footer-->
+<div class="container-fluid" style="background-color:#141414">
+	<div class="col-sm-4" style="font-size:15px;color:white;margin-top:30px;margin-bottom:10px;" > 
+		<h4>About US</h4>
+			<p>This is a website where you can enjoy various types of <b>Art</b> such as drawings, paintings, sketchings, illustrations and handmade decor etc.It's a platform  for rising <b>Artists</b> to show theirs talent to word by publishing their work on our website.</p>
+	</div>
+	<div class="col-sm-3" style="font-size:40px;color:white;margin-top:30px;" > 
+		<h4>Contact info</h4>
+		<p style="font-size:15px; "><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0b0;</i> +17 999 888 7773</P>
+		<p style="font-size:15px; "><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0dd;</i> +12 222 333 2365</P>
+		<p style="font-size:15px; "><i style="font-size:20px;color:#FFA500;" class='fas'>&#xf015;</i> National Stadium Roead, Karachi</P>
+		<p style="font-size:15px; "><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe0e1;</i> sehrishayyaz25@gmail.com</P>
+		<p style="font-size:15px; "><i style="font-size:20px;color:#FFA500;" class="material-icons">&#xe80b;</i> website@example.com</P>
+	</div>
+	
+	<div class="col-sm-2" style="font-size:15px;color:white;margin-top:30px;"> 
+		<h4>Quick links</h4>
+		<p><a href="home.html" target="_blank">&nbsp Home</a></p>
+		<p><a href="About.html" target="_blank">&nbsp About</a></p>
+		<p><a href="categories.html" target="_blank">&nbsp Categories</a></p>
+		<p><a href="Publish.html" target="_blank">&nbsp Publish yor work</a></p>
+        <p><a href="contactUs.html" target="_blank">&nbsp Contact US</a></p>
+        <p><a href="order.html" target="_blank">&nbsp Order Now</a></p>
+	</div>
+	<div class="col-sm-3" style="font-size:15px;color:white;margin-top:30px;" > 
+		<h4>Latest Tweets</h4>
+		<i style="font-size:30px;color:white" class="fa">&#xf081;</i>
+			<p class="text-center">@example sit amet consectetur adipiscing. http://ax.by/zzzz</p>
+		<i style="font-size:30px;color:white" class="fa">&#xf081;</i>
+			<p class="text-center">@example sit amet consectetur adipiscing. http://ax.by/zzzz</p>
+	</div>
+
+	<div class="col-sm-10" style="font-size:15px;color:white;margin-top:20px;" > 
+		<footer style="font-size:15px;color:white;margin-top:5px;">© 2020 SA Art & Craft. All Rights Reserved | Design By <b style="font-size:15px;color:#FFA500;margin-top:5px;">Sehrish Ayaz.</b></footer>
+	</div>
+</div>
+</body>
+</html>

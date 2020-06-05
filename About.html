@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <link rel="icon" href="logo main.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+
+    <style>
+        .picture {
+            position: absolute;
+            width: 5.5%;
+            margin-left: 0px;
+        }
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .dropdown .dropdown-content a:hover {
+            background-color: #FFA500;
+            color: white;
+            transition: 0.6s ease;
+        }
+
+        .btn-default {
+            background: #000;
+            color: #fff;
+        }
+
+        .btn-default:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .heading {
+            padding: 20px;
+        }
+
+        #pic {
+            padding-right: 100px;
+        }
+
+        h2 {
+            color: #FF8C00;
+        }
+        .footer {
+            background-color: rgb(41, 39, 39);
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .fa-copyright {
+            margin: 3px 3px 3px 3px;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: #000;">
+    <nav style="padding-left:0px;" class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#">
+                            <img src="logo.png" alt="" style="margin-top:-20px;height:115px;width:100px;margin-left:-35px;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html" target="">Home</a></li>
+                    <li><a href="About.html" target="_blank">About</a></li>
+                    <li><a href="categories.html" target="_blank">Categories</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button
+                                style="color:white;background-color:#282828;margin-left;2px;margin-top:14px;border:none;">For Visitors
+                            </button>
+                            <div class="dropdown-content" style="background-color:white;">
+                                <a href="contactUs.html" target="_blank">Contact Us</a>
+                                <a href="Publish.html" target="_blank">Publish Your Art</a>
+                                <a href="order.html" target="_blank">Order Your Work</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="https://www.facebook.com/SehrishAyaz.25/" target="_blank"><i style="font-size:24px;color:white;margin-right: 5px;" class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sehrish_ayaz25/" target="_blank"><i style="font-size:24px;color:white;margin-right: 5px;" class="fa fa-instagram"></i></a>
+                            <a href="https://myaccount.google.com/" target="_blank"><i style="font-size:24px;color:white;margin-right: 5px;" class="fa fa-google"></i>
+                            <i style="font-size:24px;color:white; margin-top: 10px;margin-right: 5px;" class="fa fa-youtube"></i></a>
+                            <i style="font-size:24px;color:white;margin-right: 5px;" class="fa fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="heading">
+            <h1 style="text-align:center;color: white;">About Me</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5" id="pic">
+                    <img src="pic10.jpg" class="img-rounded" alt="Cinque Terre" width="475" height="502">
+                </div>
+                <div class="col-sm-7">
+                    <h2 style="font-style: italic;font-family: monospace;">SCULPTING A CREATIVE LIFE...</h2>
+                    <h3 align="justify" style="font-family: Monotype Corsiva, Times, Serif;color: white;"><b>Hi, I am
+                            Sehrish Ayaz</b></h3>
+                    <h4 style="font-family: Monotype Corsiva, Times, Serif;font-size: 20px;color: white;">I followed my
+                        whispers and started playing with color and pencils, and everything changed.</h4>
+                    <hr />
+                    <p align="justify"
+                        style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: white;">
+                        I am Sehrish Ayaz a studend, a creator, an artist.I am Computer Science student
+                        and recently graguated. You will be thinking if I am a CS student then what's all these, So let
+                        me tell you my story... <br> I love art and craft since my childhood it was my hobby but due to
+                        some family problem I was unanble to choose art as my major subject but I had alwasy love for
+                        <b>Art</b> in my heartand continue my sketching and drawing and improving my skills..And today I
+                        m here presenting my Skills As an Artist and As a designer too.</p>
+                    <hr />
+                    <p align="justify"
+                        style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: white;">
+                        Please have a look at my work that includes drawings, sketching, digital potraits
+                        and illustration etc <br>Also you can go through my designing work as I design this website by
+                        myself and this website is an opportunity for rising <b>Artists</b> to show their talent to the
+                        world by publishing their work here...</p>
+                    <hr />
+                    <button type="button" class="btn btn-default">Read More</button>
+                    <button type="button" class="btn btn-default"><a href="contactUs.html" target="">Contact
+                            Us</button></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="footer">
+            Copyright<i class="fa fa-copyright" aria-hidden="true"></i>Sehrish Ayaz
+        </div>
+
+</body>
+
+</html>
